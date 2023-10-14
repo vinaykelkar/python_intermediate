@@ -1,9 +1,14 @@
 def bubble_sort(array):
+    count = 0
     for k in range(0,len(array)-1):
-        for i in range(0,len(array)-1-k):
-            if i != len(array) - 1:
-                if array[i] > array[i+1]:
-                    array[i], array[i+1] = array[i+1], array[i]
+            for i in range(0,len(array)-1-k):
+                if i != len(array) - 1:
+                    if array[i] > array[i+1]:
+                        array[i], array[i+1] = array[i+1], array[i]
+                        count = count + 1
+            if count == 0:
+                 print(count)
+                 return array
     return array
 
 
