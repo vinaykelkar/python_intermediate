@@ -1,2 +1,2 @@
-# python_patterns
-Learn about 15 patterns in Python
+# python_sorting_algos
+Learn various algos using python
